@@ -1,5 +1,4 @@
 {% load static %}
-{% load %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +11,7 @@
         {%endblock%}
     </title>
     {%block css%}
-
+        <link rel="stylesheet" href="{% static 'styles/navbar.css' %}">
     {%endblock%}
 </head>
 <body>

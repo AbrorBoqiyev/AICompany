@@ -1,3 +1,29 @@
-{% extends "base.html" %}
 {% load static %}
 
+<header>
+    <nav>
+        <div>
+            <h1><a href="#">LearnOpenCV</a></h1>
+            <span>byBigVision</span>
+        </div>
+        <div class="anchors">
+            <a href="#">Home</a>
+            <a href="#">Getting Started🔻</a>
+            <a href="#">OpenCV University🔻</a>
+            <a href="#">AI Consulting</a>
+            <a href="#">About</a>
+            <img src="{% static 'icons/youtube.png'}" width="80"  alt="rasm">
+        </div>
+        <div class="search">
+            🔍
+        </div>
+        
+    </nav>
+</header>
+
+<style>
+    nav {
+        display: grid;
+        grid-template-columns: 15% 1fr 10%;
+    }
+</style>
