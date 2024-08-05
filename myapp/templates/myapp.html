@@ -3,7 +3,15 @@
 
 {% block title %}Home{% endblock  %}
 
+{% block css %}
+    <link rel="stylesheet" href="{% static 'styles/home.css' %}">
+{% endblock  %}
+
 {% block content %}
-    <h1>Hello world</h1>
-    <img src="{% static 'icons/ForestFall.jpg' %}"  width="80"   alt="rasm">
+    <h1>{{name }} world!</h1>
+    <div class="image">
+        <img class="Forestpic" src="{% static 'icons/ForestFall.jpg' %}"  width="200"   alt="rasm">
+    </div>
+
+
 {% endblock  %}

@@ -1,21 +1,31 @@
+
 {% load static %}
 
 <header>
     <nav>
-        <div>
-            <h1><a href="#">LearnOpenCV</a></h1>
-            <span>byBigVision</span>
+        <div class="logo-cover">
+            <img class="logo" src="{% static 'icons/UniverLogo.png' %}" width="195" alt="">
         </div>
-        <div class="anchors">
-            <a href="#">Home</a>
-            <a href="#">Getting Started🔻</a>
-            <a href="#">OpenCV University🔻</a>
-            <a href="#">AI Consulting</a>
-            <a href="#">About</a>
-            <img src="{% static 'icons/youtube.png'}" width="80"  alt="rasm">
+        <div class="middle">
+
+            <div class="anchors">
+                <a href="{% url 'myapp' %}">Bosh sahifa</a>
+                <a href="#">Boshlash🔻</a>
+                <a href="#">OpenCV Universiti🔻</a>
+                <a href="#">bepul kurslar🔻</a>
+                <a href="#">AI konsulting</a>
+                <a href="{% url 'about' %}">About</a>
+                
+            </div>
+            
+            <div class="youtube">
+                <a href="https://www.youtube.com/c/LearnOpenCV">
+                    <img  src="{% static 'icons/youtube.png' %}" width="27"  alt="rasm">
+                </a>
+            </div>
         </div>
         <div class="search">
-            🔍
+            <img src="{% static 'icons/lupaOq.png' %}" width="25" height="25"  alt="">
         </div>
         
     </nav>
