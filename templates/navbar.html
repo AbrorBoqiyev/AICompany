@@ -4,33 +4,33 @@
 <header>
     <nav>
         <div class="logo-cover">
-            <img class="logo" src="{% static 'icons/UniverLogo.png' %}" width="195" alt="">
+            <img class="logo" src="{% static 'icons/UniverLogo.png' %}" width="200" alt="">
         </div>
         <div class="middle">
 
             <div class="anchors">
                 <a href="{% url 'myapp' %}">Bosh sahifa</a>
-                <div class="drop">
-                    <a class="downer" href="#">
+                <div class="drop1">
+                    <a class="downer" href="https://learnopencv.com/category/install/">
                         Boshlash
                         <img src="{% static 'icons/burchak.png' %}" width="10" alt="">
                     </a>
                     <div class="down">
-                        <li><a href="#">link1</a></li>
-                        <li><a href="#">link2</a></li>
-                        <li><a href="#">link3</a></li>
-                        <li><a href="#">link4</a></li>
+                        <li><a href="https://learnopencv.com/category/install/">O'rnatish</a></li>
+                        <li><a href="https://learnopencv.com/getting-started-with-opencv/">opencv bilan-boshlash</a></li>
+                        <li><a href="https://learnopencv.com/getting-started-with-pytorch/">pymash'ala</a></li>
+                        <li><a href="https://learnopencv.com/getting-started-with-tensorflow-keras/">tensorflow va keras</a></li>
                     </div>
                 </div>
-                <div class="drop">
-                    <a class="downer" href="#">
+                <div class="drop2">
+                    <a class="univer" class="downer" href="#">
                         OpenCV Universiti
                         <img src="{% static 'icons/burchak.png' %}" width="10" alt="">
                     </a>
                     <div class="down">
                         <li><a href="#">link1</a></li>
                         <li><a href="#">link2</a></li>
-                        <li><a href="#">link3</a></li>
+                        <li><a href="#">Python bilan OpenCv ni o'zlashtirish</a></li>
                         <li><a href="#">link4</a></li>
                         <li><a href="#">link5</a></li>
                         <li><a href="#">link6</a></li>
@@ -38,7 +38,7 @@
                         <li><a href="#">link8</a></li>
                     </div>
                 </div>
-                <div class="drop">
+                <div class="drop3">
                     <a class="downer" href="#">
                         bepul kurslar
                         <img src="{% static 'icons/burchak.png' %}" width="10" alt="">
@@ -60,16 +60,42 @@
                 </a>
             </div>
         </div>
+        <span class="searcher-window">
+            <span class="inp-wrapper">
+                <input class="search-inp" type="search" placeholder="Search...">
+                <img class="s-lupa" src="{% static 'icons/lupaOq.png' %}" width="25" height="25"  alt="">
+            </span>
+        </span>
         <div class="search">
-            <img src="{% static 'icons/lupaOq.png' %}" width="25" height="25"  alt="">
+            <img  class="lupa" src="{% static 'icons/lupaOq.png' %}" width="25" height="25"  alt="">
+            <span class="searchCloser">&times;</span>
         </div>
         
     </nav>
 </header>
 
-<style>
-    nav {
-        display: grid;
-        grid-template-columns: 15% 1fr 10%;
+<script>
+    const lupa = document.querySelector('.lupa')
+    const closer = document.querySelector(".searchCloser")
+    const searchWindow = document.querySelector(".searcher-window")
+    const searchInp = document.querySelector(".inp-wrapper")
+
+    lupa.addEventListener('click', searchRunner)
+    closer.addEventListener('click', close)
+
+    function searchRunner(e){
+        closer.style.opacity = '1'
+        closer.style.top = '1em';
+        searchWindow.style.opacity = '1'
+        searchWindow.style.width = '100%';
+        searchWindow.style.height = '100%';
     }
-</style>
+    
+    function close(){
+        closer.style.opacity = '0'
+        closer.style.top = '-2em';
+        searchWindow.style.opacity = '0'
+        searchWindow.style.width = '0%';
+        searchWindow.style.height = '0%';
+    }
+</script>
