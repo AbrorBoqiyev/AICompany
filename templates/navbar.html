@@ -82,13 +82,18 @@
 
     lupa.addEventListener('click', searchRunner)
     closer.addEventListener('click', close)
+    searchWindow.addEventListener('click', handleClickOutside)
+    searchInp.style.transition = 'top 1s ease-out 0.5s';
+   
 
-    function searchRunner(e){
+    function searchRunner(){
         closer.style.opacity = '1'
         closer.style.top = '1em';
         searchWindow.style.opacity = '1'
         searchWindow.style.width = '100%';
         searchWindow.style.height = '100%';
+        searchWindow.style.borderRadius = '0'
+        searchInp.style.top = '18rem'
     }
     
     function close(){
@@ -97,5 +102,13 @@
         searchWindow.style.opacity = '0'
         searchWindow.style.width = '0%';
         searchWindow.style.height = '0%';
+        searchWindow.style.borderRadius = '50%'
+        searchInp.style.top = '-18rem'
+    }
+
+    function handleClickOutside(event) {
+        if (!searchInp.contains(event.target)) {
+            close();
+        }
     }
 </script>
