@@ -41,9 +41,45 @@ input::placeholder{
 }
 
 .foot-nav {
-    display: flex;
-    justify-content: space-between;
-
+    display: grid;
+    grid-template-columns: 30% 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 3rem;
     color: snow;
 }
 
+.foot-nav-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.foot-nav-items a{
+    text-decoration: none;
+    color: snow;
+}
+
+.foot-nav-items a:hover{
+    color: blue;
+}
+
+.underfooter {
+    width: 98%;
+    margin: auto;
+    color: snow;
+}
+
+.underCover{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.social-sites{
+    display: flex;
+    flex-direction: row;
+}
+
+.icon{
+    margin-left: 10px;
+}
