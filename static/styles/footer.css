@@ -24,7 +24,7 @@
 
 .user-info span {
     border-bottom: 3px solid gray;
-
+    width: 49%;
 }
 
 input{
@@ -43,7 +43,7 @@ input::placeholder{
 .foot-nav {
     display: grid;
     grid-template-columns: 30% 1fr 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 40px;
     margin-bottom: 3rem;
     color: snow;
 }
@@ -54,9 +54,11 @@ input::placeholder{
     gap: 10px;
 }
 
-.foot-nav-items a{
+a{
     text-decoration: none;
     color: snow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 .foot-nav-items a:hover{
@@ -72,14 +74,44 @@ input::placeholder{
 .underCover{
     display: flex;
     justify-content: space-between;
+    padding: 25px 0;
+}
+
+.about{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+h3{
     padding: 20px 0;
+}
+
+#qoshimcha {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 3px;
+    border-bottom: 1px solid snow;
+}
+#qoshimcha:hover{
+    border-bottom: 1px solid blue;
+}
+
+#qoshimcha a {
+    font-size: 20px;
 }
 
 .social-sites{
     display: flex;
     flex-direction: row;
+    gap: 10px;
 }
 
 .icon{
     margin-left: 10px;
+}
+
+.copyright h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
