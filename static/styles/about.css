@@ -1,4 +1,15 @@
-h2{
-    text-align: center;
-    background-color: cyan;
+
+
+.about-page{
+    width: 90%;
+    margin: auto;
+    padding: 4rem 0;
+}
+
+.leftAbout{
+    width: 55%;
+    font-size: 20px;
+}
+.leftAbout a{
+    color: rgb(33, 33, 241);
 }

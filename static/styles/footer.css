@@ -54,7 +54,7 @@ input::placeholder{
     gap: 10px;
 }
 
-a{
+.foot-nav-items a{
     text-decoration: none;
     color: snow;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -77,10 +77,10 @@ a{
     padding: 25px 0;
 }
 
-.about{
+.foot-nav a, .about{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 1.5;
 }
 
 h3{
