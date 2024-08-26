@@ -1,15 +1,53 @@
 
 
 .about-page{
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 4rem;
     width: 90%;
     margin: auto;
     padding: 4rem 0;
 }
 
 .leftAbout{
-    width: 55%;
+    width: 100%;
     font-size: 20px;
+    padding-right: 2rem;
 }
 .leftAbout a{
     color: rgb(33, 33, 241);
+}
+.right-stikcy{
+    padding: 3rem 1rem;
+    
+}
+
+.stickers {
+    position: sticky;
+    top: 12%;
+}
+
+#carouselExample{
+    width: ;
+}
+
+.under-button{
+  display: inline-block;  
+  width: 24rem;
+  background-color: rgb(38, 113, 224);
+  padding: 10px 5rem;
+}
+
+.right-up .under-button:hover{
+    background-color: #222;
+}
+.right-up a{
+    text-decoration: none;
+    color: snow;
+    text-align: center;
+    
+}
+
+.hinderer {
+    width: 24rem;
 }
